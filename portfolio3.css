@@ -1,0 +1,409 @@
+*{
+  margin:0;
+  padding:0;
+}
+/*les margins et les paddings ne sont pas ajoutés aux tailles définies pour les divs*/
+html {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('fonts/Futura-T.ttf');
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-family: "Futura", Arial, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+a li:hover{
+  color: #966d1c;
+}
+
+/* Bloc Accueil */
+
+header{
+  background: url(img/img2.jpg) fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 47.1rem;
+}
+
+nav{
+  background-color:#222222;
+  height: 4rem;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+}
+
+ul{
+  padding-left: 25rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#nom{
+  padding-left: 2rem;
+  width: 18rem;
+  font-weight: bolder;
+  font-size: 1.3em;
+  padding-top: 1.3rem;
+  color: white;
+}
+
+li{
+  color: white;
+  width: 10rem;
+  list-style-type:none;
+  padding-top: 1.5rem;
+  font-size: 1.1em;
+}
+
+h1{
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 13rem;
+  animation-name: ligne;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes h1 {
+    0% {
+      margin-left: 38vw;
+    }
+    100% {
+      margin-left: 10vw;
+     }
+  }
+
+
+/* Bloc Profil */
+
+#profil{
+  background-color: #f7f7f7;
+  height: 47.1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#me, #competence{
+  background-color: none;
+  height: 33rem;
+  margin-top: 5.3rem;
+  padding-top: 3rem;
+}
+
+#me{
+  width: 19rem;
+  margin-left: 2rem;
+}
+
+#competence{
+  width: 47rem;
+  height: 34rem;
+  margin-left: 11rem;
+}
+
+#dispoLigne{
+  display: flex;
+  flex-direction:column;
+}
+
+#idMe,#idCompetence{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3rem;
+  height: 2rem;
+  margin-left: 10rem;
+  font-size: 1.3em;
+  border-bottom: solid 0.3rem black;
+}
+
+#idMe{
+  margin-left: 12rem;
+  width: 3rem;
+}
+
+#idCompetence{
+  margin-left: 20rem;
+  width: 8.5rem;
+}
+
+.texteProfil{
+  height: 60vh;
+  color: black;
+  text-align: justify;
+  padding: 1rem 1rem 0.5rem 4rem;
+  font-size: 1em;
+  width: 25rem;
+}
+
+#txtobjectif{
+  padding: 2.5rem 1rem 2rem 1rem;
+  font-size: 1em;
+  text-align: justify;
+}
+
+#ligne1{
+  margin-top: 2rem;
+}
+
+#ligne1,#ligne2{
+  display: flex;
+  flex-direction: row;
+}
+
+#trait{
+  width: 0.2rem;
+  background-color: black;
+  margin-left: 10rem;
+}
+
+#langue,#montage,#dessin,#photo{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4rem;
+  height: 4rem;
+}
+
+#case1{
+  margin-left: 3rem;
+  height: 15rem;
+}
+
+#case2{
+  margin-left: 4rem;
+  height: 15rem;
+}
+
+#case3{
+  margin-left: 3rem;
+  height: 15rem;
+}
+
+#case4{
+  margin-left: 4rem;
+  height: 15rem;
+}
+
+#langue{
+  background-image: url(img/eng.svg);
+  margin-left: 6rem;
+}
+#montage{
+  background-image: url(img/montage.svg);
+  margin-left: 6rem;
+}
+#dessin{
+  background-image: url(img/stylo.svg);
+  margin-left: 7rem;
+}
+#photo{
+  background-image: url(img/tof.svg);
+  margin-left: 6.5rem;
+}
+
+#desc1,#desc2,#desc3,#desc4{
+  width: 18rem;
+  height: 6rem;
+  margin-top: 1.3rem;
+  color: black;
+  font-size: 1em;
+}
+
+#desc1{
+  padding-top: 0.5rem;
+  padding-left: 3.5rem;
+}
+
+#desc2{
+  text-align: justify;
+  padding: 0.2rem 0.2rem 0.4rem 0.3rem;
+}
+
+#desc3{
+  text-align: justify;
+  padding: 0.6rem 0.7rem 0.4rem 0.7rem;
+}
+
+#desc4{
+  text-align: justify;
+  padding: 0.2rem 0.2rem 0.4rem 0.3rem;
+}
+
+/* Bloc Portfolio */
+
+#portfolio{
+  background: url(img/wallpaper3.jpg) fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 47.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#rang1,#rang2,#rang3{
+  display: flex;
+  flex-direction: row;
+  height: 13rem;
+  width: 81.2rem;
+}
+#rang1{
+  margin-top: 4rem;
+}
+
+#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9{
+  height: 12rem;
+  width: 20rem;
+  margin-left: 5rem;
+  margin-top: 0.3rem;
+}
+
+#box1{
+  background: url(img/airbnb.png) no-repeat center;
+  background-size: contain;
+}
+
+#box2{
+  background: url(img/maquette.png) no-repeat center;
+  background-size: contain;
+}
+#box3{
+  background: url(img/maquette_4.png) no-repeat center;
+  background-size: contain;
+}
+#box4{
+  background: url(img/acme.png) no-repeat center;
+  background-size: contain;
+}
+#box5{
+  background: url(img/calculatrice.png) no-repeat center;
+  background-size: contain;
+}
+#box6{
+  background: url(img/minichat.png) no-repeat center;
+  background-size: contain;
+}
+#box7{
+  background: url(img/isopartner.png) no-repeat center;
+  background-size: contain;
+}
+#box8{
+  background: url(img/svg.png) no-repeat center;
+  background-size: contain;
+}
+#box9{
+  background: url(img/portefeuille.png) no-repeat center;
+  background-size: contain;
+}
+
+/* Bloc Contact */
+
+
+#contact{
+  background-color: #eae8e8;
+  height: 39rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 6rem;
+}
+
+#googlemaps{
+  margin-left: 4rem;
+}
+
+#lienrsx{
+  display: flex;
+  flex-direction:column;
+}
+
+#coordonnee{
+  display: flex;
+  flex-direction:row;
+  padding-left: 8rem;
+  width: 52rem;
+  margin-top: 6rem;
+}
+
+#reseau{
+  margin-top: 8rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction:row;
+  width: 40rem;
+}
+
+#tel{
+  display: flex;
+  flex-direction: row;
+}
+
+#imgtel{
+  width: 6vw;
+  height: 7vh;
+  margin-top: 5vh;
+}
+
+.paragraphe{
+  font-family: "Futura", Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 1em;
+  color: #222222;
+  margin-top: 1.8rem;
+}
+
+#coordonnee img{
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+  margin-left: 6rem;
+  padding-bottom: 1vh;
+}
+#reseau img{
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+  margin-left: 5.5rem;
+  padding-bottom: 1vh;
+}
+
+a.imgsurvol:hover::after{
+content:"06-98-92-77-25";
+}
+
+img.imgsurvol:hover{
+display : none;
+}
+
+/* Footer */
+
+footer{
+  background-color:#222222;
+  color: white;
+  height: 3rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#mentionlegale{
+  text-decoration: none;
+  color: white;
+}
