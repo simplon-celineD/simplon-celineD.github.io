@@ -54,7 +54,7 @@ ul{
 
 #nom{
   padding-left: 2rem;
-  width: 22rem;
+  width: 20rem;
   font-weight: bolder;
   font-size: 1.3em;
   padding-top: 1.3rem;
@@ -247,7 +247,7 @@ h1{
 /* Bloc Portfolio */
 
 #portfolio{
-  background: url(img/wallpaper3.jpg) fixed;
+  background: url(img/pexel1.png) fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
