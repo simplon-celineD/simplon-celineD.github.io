@@ -47,14 +47,14 @@ nav{
 }
 
 ul{
-  padding-left: 25rem;
+  padding-left: 27rem;
   display: flex;
   flex-direction: row;
 }
 
 #nom{
   padding-left: 2rem;
-  width: 18rem;
+  width: 20rem;
   font-weight: bolder;
   font-size: 1.3em;
   padding-top: 1.3rem;
